@@ -1,0 +1,9 @@
+inputDb:
+  user: $IN_DB_USER$
+  pass: $IN_DB_PASS$
+  url: jdbc:oracle:thin:@//$IN_DB_HOST$:$IN_DB_PORT$/$IN_DB_SERVICE$
+
+outputDbs:
+  - user: $OUT_DB_USER$
+    pass: $OUT_DB_PASS$
+    url: postgresql://$OUT_DB_HOST$:$OUT_DB_PORT$/$OUT_DB_NAME$
